@@ -1,26 +1,18 @@
-import { react, useState, useEffect } from "react";
-import axios from "axios";
+import React from "react";
 
-function Image() {
-  // import API Key from .env
-  const API_KEY = import.meta.env.VITE_API_KEY;
+export default function Image({ image }) {
+  const handleClick = (e) => {
+    console.warn("j'existe");
+  };
 
-  const [keyword, setKeyword] = useState("random");
-
-  const API = `https://api.pexels.com/v1/search?query=${keyword}&per_page=10`;
-
-  const autorisation = { Authorization: `Bearer ${API_KEY}` };
-
-  useEffect(() => {
-    axios
-      .get(API, { headers: autorisation })
-      .then((response) => response.data)
-      .then((data) => {
-        console.warn(data);
-      })
-      .catch((err) => console.error("Error in useEffect:", err));
-  }, []);
-
-  return <div>coucou</div>;
+  return (
+    <div>
+      <img
+        src={image.src.large}
+        alt={image.alt}
+        className="landscape"
+        onClick={handleClick}
+      />
+    </div>
+  );
 }
-export default Image;

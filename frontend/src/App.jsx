@@ -1,11 +1,11 @@
 import Home from "./pages/Home";
-import { WebcamContextProvider } from "./contexts/ImagesContext";
+import { ImagesContextProvider } from "./contexts/ImagesContext";
 
 function App() {
   return (
-    <WebcamContextProvider>
+    <ImagesContextProvider>
       <Home />
-    </WebcamContextProvider>
+    </ImagesContextProvider>
   );
 }
 
