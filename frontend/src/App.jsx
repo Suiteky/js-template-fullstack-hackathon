@@ -1,5 +1,5 @@
 import Home from "./pages/Home";
-import { WebcamContextProvider } from "./contexts/WebcamContext";
+import { WebcamContextProvider } from "./contexts/ImagesContext";
 
 function App() {
   return (

@@ -1,8 +1,7 @@
 import { react, useState, useEffect } from "react";
 import axios from "axios";
-import { createClient } from "pexels";
 
-function Webcam(url) {
+function Image() {
   // import API Key from .env
   const API_KEY = import.meta.env.VITE_API_KEY;
 
@@ -24,4 +23,4 @@ function Webcam(url) {
 
   return <div>coucou</div>;
 }
-export default Webcam;
+export default Image;
