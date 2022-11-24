@@ -9,13 +9,13 @@
   height: 100vh;
   margin: 0;
 }
-
 .imgs {
   position: relative;
   z-index: -1;
   display: grid;
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: 33vh 33vh 33vh;
+  opacity: 90%;
 }
 
 .landscape {
@@ -25,10 +25,23 @@
 
 .title {
   position: absolute;
+  align-items: center;
+  justify-content: center;
   z-index: 0;
-  font-size: 6rem;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 2rem;
+  font-family: Roboto Bold, sans-serif;
   bottom: 45vh;
-  left: 27%;
+  padding: 1rem;
+  left: 40%;
   color: white;
+  background-color: black;
+  border-radius: 2em;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+  opacity: 80%;
+}
+:hover {
+  opacity: 95%;
 }
