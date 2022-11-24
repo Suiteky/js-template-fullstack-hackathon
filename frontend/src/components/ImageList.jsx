@@ -8,7 +8,7 @@ function ImageList() {
   const API_KEY = import.meta.env.VITE_API_KEY;
 
   // const [keyword, setKeyword, images, setImages] = useContext(ImagesContext);
-  const [keyword, setKeyword] = useState("beach");
+  const [keyword, setKeyword] = useState("landscape");
   const [images, setImages] = useState([]);
   const API = `https://api.pexels.com/v1/search?query=${keyword}&per_page=9`;
 
