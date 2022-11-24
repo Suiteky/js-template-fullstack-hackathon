@@ -3,7 +3,13 @@
 This template is meant to serve as a foundation for every P2/P3 following the React-Express-MySQL stack, as learned in Wild Code School.
 It's pre-configured with a set of tools which'll help students produce industry-quality and easier-to-maintain code, while staying as simple as possible to use.
 
-## Setup & Use
+## Team members
+
+- [Lana Duval](https://github.com/lanaduval)
+- [Vivien Méreaux](https://github.com/Vivien51380)
+- [Malik Mouchou](https://github.com/MalikMch)
+- [Quentin Vivan](https://github.com/Necrontyrs)
+- [Julien Grellier](https://github.com/Suiteky)
 
 ### Project Initialization
 
@@ -22,8 +28,6 @@ It's pre-configured with a set of tools which'll help students produce industry-
 - `lint` : Runs validation tools, and refuses unclean code (will be executed on every _commit_)
 - `fix` : Fixes linter errors (run it if `lint` growls on your code !)
 
-## FAQ
-
 ### Tools
 
 - _Concurrently_ : Allows for several commands to run concurrently in the same CLI
@@ -33,3 +37,4 @@ It's pre-configured with a set of tools which'll help students produce industry-
 - _Prettier_ : "Quality of code" tool as well, focuses on the styleguide
 - _ Airbnb Standard_ : One of the most known "standards", even though it's not officially linked to ES/JS
 - _Nodemon_ : Allows to restart the server everytime a .js file is udated
+
