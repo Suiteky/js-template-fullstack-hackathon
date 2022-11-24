@@ -1,13 +1,11 @@
 import Home from "./pages/Home";
-
-import "./App.css";
+import { WebcamContextProvider } from "./contexts/ImagesContext";
 
 function App() {
   return (
-    <div className="App">
+    <WebcamContextProvider>
       <Home />
-      <p>coucou</p>
-    </div>
+    </WebcamContextProvider>
   );
 }
 
