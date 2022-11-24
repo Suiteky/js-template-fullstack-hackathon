@@ -1,5 +1,5 @@
-import Webcam from "../components/Image";
+import ImageList from "../components/ImageList";
 
 export default function Home() {
-  return <Webcam />;
+  return <ImageList />;
 }
