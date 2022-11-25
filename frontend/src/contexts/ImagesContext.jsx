@@ -1,23 +1,28 @@
 import React, { createContext, useState } from "react";
 
+
 const ImagesContext = createContext();
 
 export default ImagesContext;
 
-export function ImagesContextProvider({ children }) {
-  const [keyword, setKeyword] = useState("mountain");
-  const [images, setImages] = useState([]);
-  const [currentImg, setCurrentImg] = useState([]);
+export const ImagesContextProvider = ({ children }) => {
+
+  const [continent, setContinent] = useState("test");
+  const [mermount, setMermount] = useState("");
+  const [relsport, setRelsport] = useState("");
+  const [citycountry, setCitycountry] = useState("");
 
   return (
     <ImagesContext.Provider
       value={{
-        currentImg,
-        setCurrentImg,
-        keyword,
-        setKeyword,
-        images,
-        setImages,
+        continent,
+        setContinent,
+        mermount,
+        setMermount,
+        relsport,
+        setRelsport,
+        citycountry,
+        setCitycountry,
       }}
     >
       {children}

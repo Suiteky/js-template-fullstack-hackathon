@@ -5,6 +5,7 @@ import ContinentQuestion from "./components/ContinentQuestion";
 import MerMontagneQuestion from "./components/MerMontagneQuestion";
 import VilleCampagneQuestion from "./components/VilleCampagneQuestion";
 import DetenteQuestion from "./components/DetenteQuestion";
+import Finish from "./components/Finish";
 
 function App() {
   return (
@@ -12,10 +13,11 @@ function App() {
       <ImagesContextProvider>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/continent" element={<ContinentQuestion/>} />
-          <Route path="/mermontagne" element={<MerMontagneQuestion/>} />
-          <Route path="/villecampagne" element={<VilleCampagneQuestion/>} />
+          <Route path="/continent" element={<ContinentQuestion />} />
+          <Route path="/mermontagne" element={<MerMontagneQuestion />} />
+          <Route path="/villecampagne" element={<VilleCampagneQuestion />} />
           <Route path="/detente" element={<DetenteQuestion />} />
+          <Route path="/finish" element={<Finish />} />
         </Routes>
       </ImagesContextProvider>
     </BrowserRouter>

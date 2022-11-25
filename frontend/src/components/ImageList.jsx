@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import ImagesContext from "../contexts/ImagesContext";
 import Image from "./Image";
 
 function ImageList() {
