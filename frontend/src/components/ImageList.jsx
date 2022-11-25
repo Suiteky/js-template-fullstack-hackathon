@@ -6,12 +6,9 @@ import Image from "./Image";
 function ImageList() {
   // import API Key from .env
   const API_KEY = import.meta.env.VITE_API_KEY;
-
-  // const [keyword, setKeyword, images, setImages] = useContext(ImagesContext);
   const [keyword, setKeyword] = useState("landscape");
   const [images, setImages] = useState([]);
-  const API = `https://api.pexels.com/v1/search?query=${keyword}&page=3&orientation=landscape&per_page=9`;
-
+  const API = `https://api.pexels.com/v1/search?query=landscape&page=3&orientation=landscape&per_page=9`;
   const autorisation = { Authorization: `Bearer ${API_KEY}` };
 
   useEffect(() => {

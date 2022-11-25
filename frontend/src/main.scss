@@ -9,6 +9,27 @@
   height: 100vh;
   margin: 0;
 }
+
+.welcome {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  font-size: 2rem;
+  font-family: Roboto Bold, sans-serif;
+  padding: 1rem;
+  color: white;
+  background-color: black;
+  border-radius: 2em;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+  opacity: 80%;
+  bottom: 50vh;
+  left: 41%;
+}
+
 .imgs {
   position: relative;
   z-index: -1;
@@ -16,6 +37,9 @@
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: 33vh 33vh 33vh;
   opacity: 90%;
+  &hover {
+    opacity: 95%;
+  }
 }
 
 .landscape {
@@ -30,9 +54,29 @@
   z-index: 0;
   font-size: 2rem;
   font-family: Roboto Bold, sans-serif;
-  bottom: 45vh;
   padding: 1rem;
-  left: 40%;
+  color: white;
+  background-color: black;
+  border-radius: 2em;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+  opacity: 80%;
+  bottom: 55vh;
+  left: 43%;
+}
+
+.reponse1 {
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 45vh;
+  left: 13%;
+  z-index: 0;
+  font-size: 1.5rem;
+  font-family: Roboto Bold, sans-serif;
+  padding: 1rem;
   color: white;
   background-color: black;
   border-radius: 2em;
@@ -42,6 +86,103 @@
   -o-border-radius: 2em;
   opacity: 80%;
 }
-:hover {
-  opacity: 95%;
+
+.reponse2 {
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 45vh;
+  left : 80%;
+  z-index: 0;
+  font-size: 1.5rem;
+  font-family: Roboto Bold, sans-serif;
+  padding: 1rem;
+  color: white;
+  background-color: black;
+  border-radius: 2em;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+  opacity: 80%;
+}
+
+.reponse3 {
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 10vh;
+  z-index: 0;
+  left: 13%;
+  font-size: 1.5rem;
+  font-family: Roboto Bold, sans-serif;
+  padding: 1rem;
+  color: white;
+  background-color: black;
+  border-radius: 2em;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+  opacity: 80%;
+}
+
+.reponse4 {
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 10vh;
+  left : 80%;
+  z-index: 0;
+  font-size: 1.5rem;
+  font-family: Roboto Bold, sans-serif;
+  padding: 1rem;
+  color: white;
+  background-color: black;
+  border-radius: 2em;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+  opacity: 80%;
+}
+
+.surprise {
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 10vh;
+  left : 45%;
+  z-index: 0;
+  font-size: 1.5rem;
+  font-family: Roboto Bold, sans-serif;
+  padding: 1rem;
+  color: white;
+  background-color: black;
+  border-radius: 2em;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+  opacity: 80%;
+}
+
+.home {
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 0;
+  bottom: 90vh;
+  left: 2%;
+  font-size: 1.5rem;
+  font-family: Roboto Bold, sans-serif;
+  padding: 1rem;
+  color: white;
+  background-color: black;
+  border-radius: 2em;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+  opacity: 80%;
 }
