@@ -3,10 +3,9 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import Image from "./Image";
 
-
 function VilleCampagneQuestion() {
   const API_KEY = import.meta.env.VITE_API_KEY;
-  const [keyword, setKeyword] = useState("city&countryside");
+  const [keyword, setKeyword] = useState("city,countryside");
   const [images, setImages] = useState([]);
   const API = `https://api.pexels.com/v1/search?query=${keyword}&orientation=landscape&per_page=9`;
   const autorisation = { Authorization: `Bearer ${API_KEY}` };
@@ -24,18 +23,21 @@ function VilleCampagneQuestion() {
   return (
     <>
       <div className="imgs">
-      {images.map((image) => {
-        return <Image key={image.id} image={image} />;
-      })}
-    </div>
-    <Link to={"/"} >
-    <p className="home">Home</p>
-    </Link>
-      <h1 className="title">CITY or COUNTRYSIDE ?</h1>
-      <Link to={"/detente"}>
-      <p className="reponse1">City</p>
-      <p className="reponse2">Countryside</p>
-      <p className="surprise">Surprise Me !</p>
+        {images.map((image) => {
+          return <Image key={image.id} image={image} />;
+        })}
+      </div>
+      <Link to="/">
+        <p className="home">Home</p>
+      </Link>
+      <Link to="/mermontagne">
+        <p className="back">Back</p>
+      </Link>
+      <h1 className="cityTitle">CITY or COUNTRYSIDE ?</h1>
+      <Link to="/detente">
+        <p className="reponse3">City</p>
+        <p className="reponse2">Countryside</p>
+        <p className="surprise">Surprise Me !</p>
       </Link>
     </>
   );

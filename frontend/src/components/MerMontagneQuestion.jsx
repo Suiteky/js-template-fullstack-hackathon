@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import Image from "./Image";
 
-
 function MerMontagneQuestion() {
   const API_KEY = import.meta.env.VITE_API_KEY;
   const [keyword, setKeyword] = useState("beach,mountain");
@@ -24,18 +23,21 @@ function MerMontagneQuestion() {
   return (
     <>
       <div className="imgs">
-      {images.map((image) => {
-        return <Image key={image.id} image={image} />;
-      })}
-    </div>
-    <Link to={"/"} >
-    <p className="home">Home</p>
-    </Link>
-      <h1 className="title">BEACH or MOUNTAIN ?</h1>
-      <Link to={"/villecampagne"}>
-      <p className="reponse1">Beach</p>
-      <p className="reponse2">Mountain</p>
-      <p className="surprise">Surprise Me !</p>
+        {images.map((image) => {
+          return <Image key={image.id} image={image} />;
+        })}
+      </div>
+      <Link to="/">
+        <p className="home">Home</p>
+      </Link>
+      <Link to="/continent">
+        <p className="back">Back</p>
+      </Link>
+      <h1 className="merTitle">BEACH or MOUNTAIN ?</h1>
+      <Link to="/villecampagne">
+        <p className="reponse3">Beach</p>
+        <p className="reponse2">Mountain</p>
+        <p className="surprise">Surprise Me !</p>
       </Link>
     </>
   );

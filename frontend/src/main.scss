@@ -4,6 +4,7 @@
   margin: 0;
 }
 
+
 .homecontainer {
   width: 100%;
   height: 100vh;
@@ -15,29 +16,33 @@
   align-items: center;
   justify-content: center;
   z-index: 0;
-  font-size: 2rem;
-  font-family: Roboto Bold, sans-serif;
+  font-size: 4rem;
+  font-family: Orbitron;
+  color:  whitesmoke;
+background-color: black;
+box-shadow: rgb(25, 24, 24) 8px 8px 10px;
+
   padding: 1rem;
-  color: white;
-  background-color: black;
   border-radius: 2em;
   -webkit-border-radius: 2em;
   -moz-border-radius: 2em;
   -ms-border-radius: 2em;
   -o-border-radius: 2em;
-  opacity: 80%;
-  bottom: 50vh;
-  left: 41%;
+  opacity: 90%;
+  bottom: 45vh;
+  left: 25%;
 }
 
 .imgs {
   position: relative;
   z-index: -1;
   display: grid;
-  grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 33vh 33vh 33vh;
-  opacity: 90%;
-  &hover {
+  grid-template-columns: 33% 33% 35%;
+  grid-template-rows: 35vh 33vh 34vh;
+  opacity: 80%;
+  left: -1vh;
+  top:-1vh;
+  &:hover {
     opacity: 95%;
   }
 }
@@ -57,28 +62,114 @@
   padding: 1rem;
   color: white;
   background-color: black;
+  box-shadow: rgb(88, 86, 86) 6px 6px 6px;
   border-radius: 2em;
   -webkit-border-radius: 2em;
   -moz-border-radius: 2em;
   -ms-border-radius: 2em;
   -o-border-radius: 2em;
   opacity: 80%;
-  bottom: 55vh;
-  left: 43%;
+  bottom: 50vh;
+  left: 40%;
+  font-family: Orbitron;
 }
-
+.titleContinent {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  font-size: 2rem;
+  font-family: Roboto Bold, sans-serif;
+  padding: 1rem;
+  color: white;
+ background-color: black;
+  border-radius: 2em;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+  opacity: 80%;
+  bottom: 45vh;
+  left: 34%;
+  font-family: Orbitron;
+  box-shadow: rgb(88, 86, 86) 6px 6px 6px;
+}
+.merTitle {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  font-size: 2rem;
+  font-family: Roboto Bold, sans-serif;
+  padding: 1rem;
+  color: white;
+ background-color: black;
+  border-radius: 2em;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+  opacity: 80%;
+  bottom: 45vh;
+  left: 34%;
+  font-family: Orbitron;
+  box-shadow: rgb(88, 86, 86) 6px 6px 6px;
+}
+.cityTitle {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  font-size: 2rem;
+  font-family: Roboto Bold, sans-serif;
+  padding: 1rem;
+  color: white;
+ background-color: black;
+  border-radius: 2em;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+  opacity: 80%;
+  bottom: 45vh;
+  left: 33%;
+  font-family: Orbitron;
+  box-shadow: rgb(88, 86, 86) 6px 6px 6px;
+}
+.detenteTitle {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  font-size: 2rem;
+  font-family: Roboto Bold, sans-serif;
+  padding: 1rem;
+  color: white;
+ background-color: black;
+  border-radius: 2em;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+  opacity: 80%;
+  bottom: 45vh;
+  left: 35%;
+  font-family: Orbitron;
+  box-shadow: rgb(88, 86, 86) 6px 6px 6px;
+}
 .reponse1 {
   align-items: center;
   justify-content: center;
   position: absolute;
-  bottom: 45vh;
-  left: 13%;
+  bottom: 75vh;
+  left: 42%;
   z-index: 0;
   font-size: 1.5rem;
-  font-family: Roboto Bold, sans-serif;
   padding: 1rem;
-  color: white;
-  background-color: black;
+  font-family: Orbitron;
+  color:  black;
+  background: rgb(255,255,255);
+  box-shadow: rgb(88, 86, 86) 6px 6px 6px;
   border-radius: 2em;
   -webkit-border-radius: 2em;
   -moz-border-radius: 2em;
@@ -95,10 +186,11 @@
   left : 80%;
   z-index: 0;
   font-size: 1.5rem;
-  font-family: Roboto Bold, sans-serif;
   padding: 1rem;
-  color: white;
-  background-color: black;
+  font-family: Orbitron;
+  color:  black;
+  background: rgb(255,255,255);
+  box-shadow: rgb(88, 86, 86) 6px 6px 6px;
   border-radius: 2em;
   -webkit-border-radius: 2em;
   -moz-border-radius: 2em;
@@ -111,14 +203,15 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  bottom: 10vh;
+  bottom: 45vh;
   z-index: 0;
   left: 13%;
   font-size: 1.5rem;
-  font-family: Roboto Bold, sans-serif;
   padding: 1rem;
-  color: white;
-  background-color: black;
+  font-family: Orbitron;
+  color:  black;
+  background: rgb(255,255,255);
+  box-shadow: rgb(88, 86, 86) 6px 6px 6px;
   border-radius: 2em;
   -webkit-border-radius: 2em;
   -moz-border-radius: 2em;
@@ -132,13 +225,14 @@
   justify-content: center;
   position: absolute;
   bottom: 10vh;
-  left : 80%;
+  left : 44%;
   z-index: 0;
   font-size: 1.5rem;
-  font-family: Roboto Bold, sans-serif;
   padding: 1rem;
-  color: white;
-  background-color: black;
+  font-family: Orbitron;
+  color:  black;
+  background: rgb(255,255,255);
+  box-shadow: rgb(88, 86, 86) 6px 6px 6px;
   border-radius: 2em;
   -webkit-border-radius: 2em;
   -moz-border-radius: 2em;
@@ -151,14 +245,16 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  bottom: 10vh;
-  left : 45%;
+  bottom: 33vh;
+  left : 42%;
   z-index: 0;
   font-size: 1.5rem;
-  font-family: Roboto Bold, sans-serif;
   padding: 1rem;
-  color: white;
-  background-color: black;
+  font-family: Orbitron;
+  color:  black;
+  background: rgb(255,150,247);
+  background: radial-gradient(circle, rgba(255,150,247,1) 0%, rgba(254,188,88,1) 97%);
+  box-shadow: rgb(208, 124, 124) 6px 6px 6px;
   border-radius: 2em;
   -webkit-border-radius: 2em;
   -moz-border-radius: 2em;
@@ -172,9 +268,9 @@
   justify-content: center;
   position: absolute;
   z-index: 0;
-  bottom: 90vh;
+  bottom: 85vh;
   left: 2%;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-family: Roboto Bold, sans-serif;
   padding: 1rem;
   color: white;
@@ -185,4 +281,33 @@
   -ms-border-radius: 2em;
   -o-border-radius: 2em;
   opacity: 80%;
+  font-family: Orbitron;
+  box-shadow: rgb(88, 86, 86) 6px 6px 6px;
+}
+.back {
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 0;
+  bottom: 10vh;
+  left: 2%;
+  font-size: 1rem;
+  font-family: Roboto Bold, sans-serif;
+  padding: 1rem;
+  color: white;
+  background-color: black;
+  border-radius: 2em;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+  opacity: 80%;
+  font-family: Orbitron;
+  box-shadow: rgb(88, 86, 86) 6px 6px 6px;
+}
+.filtre {
+  width: 100%;
+  height:100%;
+  background-color: black;
+  opacity :0.8;
 }
